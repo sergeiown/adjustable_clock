@@ -31,7 +31,7 @@ html {
       p {
         @extend %label;
         position: absolute;
-        top: 4%;
+        top: 2%;
 
         &:nth-child(3) {
           @extend %label-small;
@@ -41,7 +41,7 @@ html {
       }
 
       &:first-child {
-        margin: 2rem 0 4rem 0;
+        margin: 3rem 0 4rem 0;
       }
 
       &:nth-child(3) {
@@ -52,8 +52,8 @@ html {
     .current-time,
     .user-time {
       @extend %clock;
-      width: 42rem;
-      // text-align: center;
+      // width: 42rem;
+      text-align: center;
     }
 
     .user-time {
