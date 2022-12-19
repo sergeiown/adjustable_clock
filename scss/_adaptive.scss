@@ -1,0 +1,19 @@
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 75%;
+
+    body {
+      background-size: 150%;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 62.5%;
+
+    body {
+      background-size: 200%;
+    }
+  }
+}

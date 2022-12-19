@@ -1,4 +1,7 @@
-import * as minimum from "./minimum.js";
 import * as normal from "./normal.js";
-import * as maximum from "./maximum.js";
 
+const currentTime = document.querySelector(".current-time");
+setInterval(
+  () => (currentTime.innerText = normal.getCurrentTimeString()),
+  1000
+);

@@ -1,6 +1,9 @@
 @import "../scss/reset";
 @import "../scss/fonts";
 
+$base-color: #8ee3ef;
+$inactive: rgba($base-color, 0.88);
+
 html {
   @extend %fontfamily;
 
@@ -12,18 +15,16 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
+    background-image: url(../img/bg.svg);
+    background-size: 100%;
+    background-repeat: repeat;
+
+    .current-time {
+      color: $base-color;
+      font-size: 2rem;
+    }
   }
 }
 
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 75%;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  html {
-    font-size: 62.5%;
-  }
-}
+@import "../scss/adaptive";
