@@ -4,8 +4,10 @@
 
     body {
       background-size: 150%;
+      padding: 0 0 5rem 0;
 
       .container {
+        width: 45rem;
         &:first-child {
           margin: 10rem 0 10rem 0;
         }

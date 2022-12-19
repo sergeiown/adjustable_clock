@@ -7,7 +7,7 @@ html {
   body {
     user-select: none;
     max-width: 1200px;
-    width: 96%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@ html {
       box-shadow: 0.1rem 0.1rem 1.5rem $shadow;
       border: 0.1rem solid $border;
       border-radius: 3rem;
-      width: 48rem;
+      width: 47rem;
 
       p {
         @extend %label;
