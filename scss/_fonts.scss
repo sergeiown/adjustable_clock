@@ -1,5 +1,42 @@
-@import url("https://fonts.googleapis.com/css2?family=Mina&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+$base-color: #8ee3ef;
+$label-color: #8ee4ef93;
+$background: rgba($base-color, 0.1);
+$background-hover: rgba($base-color, 0.2);
+$background-active: rgba($base-color, 0.3);
+$shadow: #8ee4efd3;
+$border: #8ee4ef2d;
 
 %fontfamily {
-  font-family: "Mina", sans-serif;
+  font-family: "Dancing Script", cursive;
+}
+
+%label {
+  color: $label-color;
+  font-size: 1.9rem;
+  opacity: 0.9;
+}
+
+%label-small {
+  color: $label-color;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+%clock {
+  font-family: "Abril Fatface", cursive;
+  font-size: 10rem;
+  color: $base-color;
+  opacity: 0.65;
+}
+
+%button {
+  font-family: "Abril Fatface", cursive;
+  font-size: 4rem;
+  font-weight: bolder;
+  color: $base-color;
+  opacity: 0.9;
 }

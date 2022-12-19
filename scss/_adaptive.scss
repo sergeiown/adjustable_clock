@@ -1,19 +1,42 @@
 @media only screen and (max-width: 768px) {
   html {
-    font-size: 75%;
+    font-size: 50%;
 
     body {
       background-size: 150%;
+
+      .container {
+        &:first-child {
+          margin: 10rem 0 10rem 0;
+        }
+
+        &:nth-child(3) {
+          margin: 3rem 0;
+        }
+      }
     }
   }
 }
 
 @media only screen and (max-width: 320px) {
   html {
-    font-size: 62.5%;
+    font-size: 40%;
 
     body {
       background-size: 200%;
     }
+  }
+}
+
+@keyframes open {
+  0% {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
   }
 }

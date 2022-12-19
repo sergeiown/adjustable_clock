@@ -1,9 +1,6 @@
 @import "../scss/reset";
 @import "../scss/fonts";
 
-$base-color: #8ee3ef;
-$inactive: rgba($base-color, 0.88);
-
 html {
   @extend %fontfamily;
 
@@ -13,16 +10,96 @@ html {
     width: 96%;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     background-image: url(../img/bg.svg);
     background-size: 100%;
     background-repeat: repeat;
 
-    .current-time {
-      color: $base-color;
-      font-size: 2rem;
+    .container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $background;
+      box-shadow: 0.1rem 0.1rem 1.5rem $shadow;
+      border: 0.1rem solid $border;
+      border-radius: 3rem;
+      width: 46rem;
+      //smooth appearance
+      animation-name: open;
+      animation-duration: 4s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-timing-function: ease-out;
+      animation-fill-mode: forwards;
+      animation-delay: 0s;
+
+      p {
+        @extend %label;
+        position: absolute;
+        top: 4%;
+
+        &:nth-child(3) {
+          @extend %label-small;
+          top: 85%;
+          left: 87%;
+        }
+      }
+
+      &:first-child {
+        margin: 2rem 0 4rem 0;
+      }
+
+      &:nth-child(3) {
+        margin: 1rem 0;
+      }
+    }
+
+    .current-time,
+    .user-time {
+      @extend %clock;
+      width: 40rem;
+    }
+
+    .user-time {
+      opacity: 0.8;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6rem;
+      //smooth appearance
+      animation-name: open;
+      animation-duration: 6s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-timing-function: ease-out;
+      animation-fill-mode: forwards;
+      animation-delay: 0s;
+
+      button {
+        @extend %button;
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        border: 0.1rem solid $border;
+        padding: 0 0 0.2rem 0;
+        background-color: $background;
+        box-shadow: 0.1rem 0.1rem 1rem $shadow;
+        transition: all 0.15s ease-in-out;
+
+        &:hover {
+          background-color: $background-hover;
+        }
+
+        &:active {
+          background-color: $background-active;
+        }
+      }
     }
   }
 }
