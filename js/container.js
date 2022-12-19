@@ -13,7 +13,7 @@ const buttonDecreaseSecond = document.querySelector(".decrease-second");
 const currentTime = document.querySelector(".current-time");
 const userTime = document.querySelector(".user-time");
 
-// clocs' vars and funcs
+// vars and funcs of the clock
 const dateOptions = {
   hour: "numeric",
   minute: "numeric",
@@ -40,7 +40,7 @@ const userClock = () => {
   return userDate.toLocaleString(localOptions.ukraine, dateOptions);
 };
 
-// show clocs
+// show clocks
 setInterval(() => (currentTime.innerText = localClock()), 1000);
 setInterval(() => (userTime.innerText = userClock()), 1000);
 
