@@ -3,7 +3,7 @@
     font-size: 45%;
 
     body {
-      background-size: 110%;
+      background-size: 200%;
       padding: 0 0 5rem 0;
 
       .container {
@@ -23,10 +23,6 @@
 @media only screen and (max-width: 320px) {
   html {
     font-size: 40%;
-
-    body {
-      background-size: 200%;
-    }
   }
 }
 
