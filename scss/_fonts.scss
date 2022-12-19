@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@700&display=swap");
 
 $base-color: #8ee3ef;
 $label-color: #8ee4ef93;
@@ -27,7 +27,7 @@ $border: #8ee4ef2d;
 }
 
 %clock {
-  font-family: "Xanh Mono", monospace;
+  font-family: "Chivo Mono", monospace;
   font-size: 9rem;
   font-weight: 900;
   line-height: 140%;
@@ -36,7 +36,7 @@ $border: #8ee4ef2d;
 }
 
 %button {
-  font-family: "Xanh Mono", monospace;
+  font-family: "Chivo Mono", monospace;
   font-size: 4rem;
   font-weight: bolder;
   color: $base-color;
