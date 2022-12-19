@@ -1,5 +1,19 @@
+"use strict";
+
 // import * as normal from "./normal.js";
 
+const buttonIncreaseHour = document.querySelector(".increase-hour");
+const buttonIncreaseMinute = document.querySelector(".increase-minute");
+const buttonIncreaseSecond = document.querySelector(".increase-second");
+
+const buttonDecreaseHour = document.querySelector(".decrease-hour");
+const buttonDecreaseMinute = document.querySelector(".decrease-minute");
+const buttonDecreaseSecond = document.querySelector(".decrease-second");
+
+const currentTime = document.querySelector(".current-time");
+const userTime = document.querySelector(".user-time");
+
+// clocs' vars and funcs
 const dateOptions = {
   hour: "numeric",
   minute: "numeric",
@@ -26,12 +40,27 @@ const userClock = () => {
   return userDate.toLocaleString(localOptions.ukraine, dateOptions);
 };
 
-const userClockAdjust = () => {
-  
-}
-
-const currentTime = document.querySelector(".current-time");
-const userTime = document.querySelector(".user-time");
-
+// show clocs
 setInterval(() => (currentTime.innerText = localClock()), 1000);
 setInterval(() => (userTime.innerText = userClock()), 1000);
+
+// ivent listeners
+buttonIncreaseHour.addEventListener("click", () => {
+  userHours++;
+});
+buttonIncreaseMinute.addEventListener("click", () => {
+  userMinutes++;
+});
+buttonIncreaseSecond.addEventListener("click", () => {
+  userSeconds++;
+});
+
+buttonDecreaseHour.addEventListener("click", () => {
+  userHours--;
+});
+buttonDecreaseMinute.addEventListener("click", () => {
+  userMinutes--;
+});
+buttonDecreaseSecond.addEventListener("click", () => {
+  userSeconds--;
+});

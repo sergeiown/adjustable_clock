@@ -27,14 +27,6 @@ html {
       border: 0.1rem solid $border;
       border-radius: 3rem;
       width: 46rem;
-      //smooth appearance
-      animation-name: open;
-      animation-duration: 4s;
-      animation-iteration-count: 1;
-      animation-direction: normal;
-      animation-timing-function: ease-out;
-      animation-fill-mode: forwards;
-      animation-delay: 0s;
 
       p {
         @extend %label;
@@ -60,7 +52,8 @@ html {
     .current-time,
     .user-time {
       @extend %clock;
-      width: 40rem;
+      width: 42rem;
+      // text-align: center;
     }
 
     .user-time {
@@ -74,12 +67,12 @@ html {
       gap: 6rem;
       //smooth appearance
       animation-name: open;
-      animation-duration: 6s;
+      animation-duration: 7s;
       animation-iteration-count: 1;
       animation-direction: normal;
       animation-timing-function: ease-out;
       animation-fill-mode: forwards;
-      animation-delay: 0s;
+      animation-delay: 0.5s;
 
       button {
         @extend %button;
