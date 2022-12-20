@@ -27,11 +27,12 @@ html {
       border: 0.1rem solid $border;
       border-radius: 3rem;
       width: 44rem;
+      height: 13rem;
 
       p {
         @extend %label;
         position: absolute;
-        top: 1%;
+        top: 0%;
 
         &:nth-child(3) {
           @extend %label-small;
@@ -52,12 +53,16 @@ html {
     .current-time,
     .user-time {
       @extend %clock;
-      // width: 38rem;
+      border-radius: 0.5rem;
+      background-color: $base-color;
+      width: 85%;
+      height: 64%;
       text-align: center;
+      opacity: 0.6;
     }
 
     .user-time {
-      opacity: 0.8;
+      opacity: 0.7;
     }
 
     .button-container {
