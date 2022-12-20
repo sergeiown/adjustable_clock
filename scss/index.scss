@@ -26,17 +26,17 @@ html {
       box-shadow: 0.1rem 0.1rem 1.5rem $shadow;
       border: 0.1rem solid $border;
       border-radius: 3rem;
-      width: 47rem;
+      width: 44rem;
 
       p {
         @extend %label;
         position: absolute;
-        top: 2%;
+        top: 1%;
 
         &:nth-child(3) {
           @extend %label-small;
           top: 85%;
-          left: 88%;
+          left: 87%;
         }
       }
 
@@ -52,7 +52,7 @@ html {
     .current-time,
     .user-time {
       @extend %clock;
-      // width: 42rem;
+      // width: 38rem;
       text-align: center;
     }
 
@@ -64,7 +64,7 @@ html {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 6rem;
+      gap: 5rem;
       //smooth appearance
       animation-name: open;
       animation-duration: 7s;
